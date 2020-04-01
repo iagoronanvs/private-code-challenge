@@ -1,0 +1,27 @@
+* Objetivo: Desenvolver um gerenciador de tarefas com cronômetro.
+
+* Características:
+- A aplicação deve ser responsiva;
+- Design é um grande diferencial;
+- Selecione as tecnologias que julga melhor solucionarem o problema;
+
+* Cenário:
+
+O usuário deseja gerenciar quanto tempo passa trabalhando / executando  cada tarefa.
+
+* Dados da Aplicação:
+
+[OK] - O usuário deve poder criar e editar tarefas;
+[OK] - Cada tarefa criada deve possuir um cronômetro;
+[OK] - Cada tarefa deve possuir dois botões:
+	[OK] - Play / Start: Inicia a tarefa / cronômetro;
+	[OK] - Stop: Para a tarefa / cronômetro
+
+[OK] - Cada tarefa deve conter um botão para marcar sua “conclusão”;
+[OK] - Tarefas concluídas devem ser listadas em outra área (modal ou tela), 	onde devem constar:
+	[OK] - Tempo total computado até a conclusão da tarefa 
+	     (desde o primeiro “start” até a conclusão);
+	[OK] - Um botão para “reabrir a tarefa”;
+	[OK] - Deve conter um campo com o “Tempo Total Trabalhado” que é a 		     soma do tempo de todas as tarefas;
+
+[OK] - A aplicação deve estar preparada para manter o cronômetro rodando para a tarefa selecionada ainda que a janela seja atualizada ou o navegador seja fechado;
