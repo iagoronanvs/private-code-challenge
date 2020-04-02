@@ -71,20 +71,18 @@ function Template({ children, page, number }) {
       <header id="header">
         <div className="mui-appbar mui--appbar-line-height">
           <div className="mui-container">
-            <Link
-              to=""
+            <a
               className="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer"
               onClick={overlay}
             >
               ☰
-            </Link>
-            <Link
-              to=""
+            </a>
+            <a
               className="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer"
               onClick={overlay}
             >
               ☰
-            </Link>
+            </a>
             <span className="mui--text-title2">
               {page} {number >= 0 && <span>({number})</span>}
             </span>
