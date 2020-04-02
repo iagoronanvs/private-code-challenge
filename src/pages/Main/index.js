@@ -12,7 +12,7 @@ import Api from '../../services/firebase';
 
 import empty from '../../assets/img/empty.svg';
 
-function App() {
+function App({ history }) {
   const [isVisible, setVisible] = useState(false);
   const [list, setList] = useState(null);
   const [list2, setList2] = useState([]);
@@ -56,7 +56,7 @@ function App() {
   }, []);
 
   return (
-    <Template page="Tarefas" number={list2.length}>
+    <Template page="Tarefas" number={list2.length} history={history}>
       {list && list.length === 0 && (
         <div id="content-wrapper-center">
           <div className="empty">

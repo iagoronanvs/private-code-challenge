@@ -96,7 +96,7 @@ a:focus {
   width: 200px;
   left: -200px;
   overflow: auto;
-  z-index: 2;
+  z-index: 99999999;
   background-color: var(--white);
   transition: transform 0.2s;
 }
@@ -440,4 +440,8 @@ a:focus {
 
 .bolder {
   font-weight: bold;
+}
+
+.hide {
+  display: none;
 }

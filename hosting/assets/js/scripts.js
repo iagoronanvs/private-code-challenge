@@ -4,16 +4,16 @@ jQuery(function($) {
 
   function showSidedrawer() {
     // show overlay
-    var options = {
-      onclose: function() {
-        $sidedrawerEl.removeClass('active').appendTo(document.body);
-      }
-    };
+    // var options = {
+    //   onclose: function() {
+    //     $sidedrawerEl.removeClass('active').appendTo(document.body);
+    //   }
+    // };
 
-    var $overlayEl = $(mui.overlay('on', options));
+    // var $overlayEl = $(mui.overlay('on', options));
 
     // show element
-    $sidedrawerEl.appendTo($overlayEl);
+    // $sidedrawerEl.appendTo($overlayEl);
     setTimeout(function() {
       $sidedrawerEl.addClass('active');
     }, 20);

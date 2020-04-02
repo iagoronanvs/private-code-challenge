@@ -42,14 +42,14 @@ function TaskForm({ isVisible, title, onCancel, task }) {
               <Input
                 required
                 label="Nome"
-                value={form.name}
+                value={form.name || ''}
                 onChange={ev => setForm({ ...form, name: ev.target.value })}
               />
             </div>
             <div className="mui-textfield">
               <Textarea
                 label="Descrição"
-                value={form.description}
+                value={form.description || ''}
                 onChange={ev =>
                   setForm({ ...form, description: ev.target.value })
                 }

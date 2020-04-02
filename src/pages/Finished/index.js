@@ -13,7 +13,7 @@ import Api from '../../services/firebase';
 
 import { calcTime } from '../../util/helper';
 
-function Finished() {
+function Finished({ history }) {
   const [list, setList] = useState(null);
   const [list2, setList2] = useState([]);
   const [timeWork, setTimeWork] = useState({
@@ -70,7 +70,7 @@ function Finished() {
   }, []);
 
   return (
-    <Template page="Tarefas Concluídas">
+    <Template page="Tarefas Concluídas" history={history}>
       <div id="content-wrapper">
         <Container fluid={true}>
           <Row>
